@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.min.css">
-    <title>Conjetura de Adams</title>
+    <title>Conjetura Romero</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <div class="container">
 
         <div class="container my- 2 text-center">
-            <h1> Conjetura de Adams</h1>
+            <h1> Conjetura Romero</h1>
         </div>
         <div class=" container row  my-4 align-items-center  ">
             <div class=" container col-12 ">
@@ -22,7 +22,7 @@
                         aria-expanded="false" aria-controls="multiCollapseExample1">Observaciones</a>
                     <button class="btn btn-dark" type="button" data-toggle="collapse"
                         data-target="#multiCollapseExample2" aria-expanded="false"
-                        aria-controls="multiCollapseExample2">Algunas pruebas realizadas</button>
+                        aria-controls="multiCollapseExample2">Prueba</button>
                     <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".multi-collapse"
                         aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Cerrar
                         contenido</button>
@@ -31,14 +31,7 @@
                     <div class="col-6">
                         <div class="collapse multi-collapse" id="multiCollapseExample1">
                             <div class="card card-body">
-                                OBSERVACIONES
-                                SE REVISA INICIALMENTE LA SECUENCIA DE LOS NÚMEROS PRIMOS Y LA SUCESIÓN DE FIBONACCI CON
-                                EL FIN DE ENCONTRAR UN PATRÓN CON ESTAS DOS O ALGUNA RELACIÓN, DESPUÉS DE OBSERVAR LA
-                                SUCESIÓN DE FIBONACCI SE REALIZAN LAS SIGUIENTES PREGUNTAS: ¿QUE PASARÍA SI OPERO UN
-                                NÚMERO PRIMO CON SU NUMERO NATURAL ANTERIOR Y CON SU NÚMERO NATURAL SIGUIENTE? ¿PODRÍA
-                                OBTENER UN NUMERO PRIMO REALIZANDO DIVERSAS PRUEBAS CON ESTOS NÚMEROS?
-                                DE ACUERDO A LA OBSERVACIÓN Y LAS PREGUNTAS QUE SE REALIZAN SE COMIENZA A DESARROLLAR UN
-                                PROGRAMA EN JAVASCRIPT QUE PERMITA VER EL RESULTADO ESPERADO.
+                                
 
                             </div>
                         </div>
@@ -46,14 +39,7 @@
                     <div class="col-6">
                         <div class="collapse multi-collapse" id="multiCollapseExample2">
                             <div class="card card-body">
-                                A CONTINUACIÓN SE MUESTRAN ALGUNAS PROPUESTAS QUE SE PUSIERON A PRUEBA:
-                                EL RESULTADO DE MULTIPLICAR UN NUMERO PRIMO POR 2 ES LO MISMO (O ES IGUAL QUE) QUE TOMAR
-                                EL NUMERO PRIMO MULTIPLICADO POR SU NÚMERO NATURAL ANTERIOR Y RESTARLO POR EL RESULTADO
-                                DEL MISMO NÚMERO PRIMO MULTIPLICADO POR SU NÚMERO NATURAL SIGUIENTE.
-                                ES DECIR TOMO EL NÚMERO 7, EL DOBLE ES 14, SI YO TOMO EL 7 Y LO MULTIPLICO POR SU NÚMERO
-                                NATURAL ANTERIOR ES DECIR EL 6 ME VA DAR 42 Y A ESO LE RESTO LA MULTIPLICACIÓN DE 7 POR
-                                SU NÚMERO NATURAL SIGUIENTE 56, 56-42 ME DA 14, QUE VENDRÍA SIENDO 7+7
-                                SE DESCARTA PORQUE NO SE TIENE EL RESULTADO ESPERADO
+                                
 
                             </div>
                         </div>
@@ -68,13 +54,13 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Matemáticas Discretas 30194</h5>
-                <p class="card-text">Emirt Lorenzo Adams Saenz</p>
+                <p class="card-text">Miguel Andrés Romero Clavijo</p>
                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
                     Ver Conjetura
                 </button>
             </div>
             <div class="card-footer text-muted">
-                15 de septiembre 2020
+                18 de septiembre 2020
             </div>
         </div>
         <!-- Modal -->
@@ -82,22 +68,21 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title " id="exampleModalLabel">Conjetura de Adams</h5>
+                        <h5 class="modal-title " id="exampleModalLabel">Conjetura Romero</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
 
-                        SI TOMAMOS UN NÚMERO PRIMO(P) MAYOR QUE 2 Y A SU NÚMERO NATURAL SIGUIENTE(PS) LO MULTIPLICAMOS
-                        POR 3 Y A ESTE RESULTADO LE RESTAMOS EL NÚMERO 1 EL 60% DE LOS NÚMEROS DARÁ COMO RESULTADO UN
-                        NUMERO PRIMO.
-                        (PS*3)-1
+                       En el análisis realizado podemos afirmar que dentro de un rango de 74 años se tienen 19 años bisiestos (número primo), 
+                       de estos 19 años bisiestos solo 2 veces (número primo) terminan el año en  días miércoles y viernes asignados con los
+                       número 3 y 5 (números primos).
+
                         <br>
-                        DE LOS NÚMEROS PRIMOS DEL 1 AL 100 SE CUMPLE CON EL 3, 5, 7, 13, 17, 19, 23, 29, 37, 43, 59, 79,
-                        83, 89, 97.
-                        <br>SE ESCOGE ALEATORIAMENTE EL 163, RESULTADO 491 EL CUAL ES PRIMO.
-                        <br>SE ESCOGE ALEATORIAMENTE EL 127, RESULTADO 383 EL CUAL ES PRIMO.
+                        
+                        <br>
+                        <br>
 
                     </div>
                     <div class="modal-footer">
@@ -116,13 +101,13 @@
                     <input type="text" class="form-control is-invalid" id="validationServer01"
                         aria-describedby="validationServer03Feedback" required>
                     <div id="validationServer03Feedback" class="invalid-feedback">
-                        Por favor ingresa un número primo en este campo.
+                        ¿Hasta que número quiere saber cuantos números primso hay?
                     </div>
                 </div>
     
             </div>
     
-            <button class="btn btn-dark" type="" onclick="Conjetura()">Realizar operación</button>
+            <button class="btn btn-dark" type="" onclick="Conjetura()">Ejecutar</button>
         </form>
 
 
@@ -133,7 +118,7 @@
 
 
 
-    <!--<button onclick="Conjetura()">Inice la operación</button>-->
+    <!--<button onclick="Conjetura()">Ejecutar</button>-->
 
     <script src="./bootstrap-4.5.2-dist/js/jquery.js"></script>
 
@@ -141,60 +126,25 @@
 
     <script>
 
-        function Conjetura() {
-            let numeroPrimo = parseInt(document.getElementById("validationServer01").value);
-            console.log("El numero primo ingresado es " + numeroPrimo);
-            let numeroAnterior = numeroPrimo - 1;
-            console.log("El numero natural anterior es " + numeroAnterior);
-            let numeroSiguiente = numeroPrimo + 1;
-            console.log("El numero natural siguiente  es " + numeroSiguiente);
-            /*
-            let numeroResultado = Math.pow(numeroPrimo, numeroAnterior);
-            console.log(numeroResultado);*/
-            //let validarR = Math.pow(numeroAnterior, numeroPrimo);
-            //let validarR1 = Math.pow(numeroSiguiente, numeroPrimo);
-            //console.log("El numero siguiente elevado a la potencia del numero primo ingresado es " + validarR);
-            //let validarR2 = numeroPrimo + numeroAnterior;
-            //console.log("El numero elevado será dividido entre " + validarR2);
-            /*
-            let numeroResultado2 = Math.abs((numeroPrimo*numeroAnterior)-(numeroPrimo*numeroSiguiente));
-            console.log(numeroResultado2);
-             numeroResultado2 = ((numeroResultado2 % numeroSiguiente)+1)+numeroSiguiente;
-            */
-
-            //let numeroResultado2= Math.pow(numeroAnterior, numeroSiguiente)%(Math.pow(numeroSiguiente,numeroPrimo));
-            // let numeroResultado2 = (numeroAnterior*numeroSiguiente)%numeroPrimo*3-numeroAnterior;
-            let numeroResultado2 = (numeroSiguiente * 3) - 1
-
-
-
-
-            console.log(numeroResultado2);
-
-            var divisores = 0;
-            for (i = 1; i <= numeroResultado2; i++) {
-                residuo = numeroResultado2 % i;
-                if (residuo == 0) {
-
-                    divisores++;
+        var stopNumber = prompt("¿Hasta que número quiere saber cuantos números primso hay?");
+            var arrayOfPrimes = [];
+            var arePrime = 0;
+            var primeCounterArray = [];
+            var notPrime = 0;
+          for (actualNumber = 0; actualNumber <= stopNumber; actualNumber++ ) {
+              arrayOfPrimes.push(actualNumber);
+              for (indexPosition = 0; indexPosition <= arrayOfPrimes.length; indexPosition++) {
+                if (actualNumber % indexPosition === 0 && actualNumber !== 0) {
+                  primeCounterArray.push(1);
                 }
-            }
-            if (divisores > 2) {
+              }
+              if (primeCounterArray.length > 2) {
+                notPrime++;
+                primeCounterArray = [];
+              }
+}
 
-
-                console.log('el numero no es primo');
-                alert("El resultado de la operación no es un número primo")
-            } else {
-                console.log('el numero es primo');
-                alert("El número ingresado fue : " + numeroPrimo + " ,el numero siguiente es: " + numeroSiguiente + " (PS*3)-1 = " + numeroResultado2 + " es número primo");
-
-
-            }
-            
-
-
-
-        }
+alert("Son primos: " + (stopNumber - notPrime));
 
 
     </script>

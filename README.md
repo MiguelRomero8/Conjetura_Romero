@@ -1,2 +1,2 @@
-# Conjetura_Romero
-Conjetura Matemática Discretas 
+# Encriptación_de_clave
+Administración Base de Datos

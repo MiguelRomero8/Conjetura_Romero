@@ -122,8 +122,8 @@
 
       <?php
 function encrypt($cadena){
-	$vocales 	= array("A", "E", "I", "O", "U", "Á", "É", "Í", "Ó", "Ú");
-	$resultado 	= str_replace($vocales, "3", strtoupper($cadena));
+	$datos 	= array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M", "N", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
+	$resultado 	= str_replace($datos, "&$#%",  strtoupper($cadena));
 	echo $resultado;
 }
 ?>

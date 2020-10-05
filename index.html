@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.min.css">
-    <title>Conjetura Romero</title>
+    <title>Encriptación Clave</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <div class="container">
 
         <div class="container my- 2 text-center">
-            <h1> Conjetura Romero</h1>
+            <h1> Encriptación Clave</h1>
         </div>
         <div class=" container row  my-4 align-items-center  ">
             <div class=" container col-12 ">
@@ -52,14 +52,14 @@
                 CUN
             </div>
             <div class="card-body">
-                <h5 class="card-title">Matemáticas Discretas 30194</h5>
-                <p class="card-text">Miguel Andrés Romero Clavijo</p>
+                <h5 class="card-title">Administración de Bases de Datos</h5>
+                <p class="card-text">Miguel Andrés Romero Clavijo - Luis Mauricio Martinez Arevalo</p>
                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
                     Ver Conjetura
                 </button>
             </div>
             <div class="card-footer text-muted">
-                18 de septiembre 2020
+                04 de Octubre 2020
             </div>
         </div>
         <!-- Modal -->
@@ -67,15 +67,12 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title " id="exampleModalLabel">Conjetura Romero</h5>
+                        <h5 class="modal-title " id="exampleModalLabel">Encriptación Clave</h5>
                         
                     </div>
                     <div class="modal-body">
 
-                       En el análisis realizado podemos afirmar que dentro de un rango de 74 años se tienen 19 años bisiestos (número primo), 
-                       <br>de estos 19 años bisiestos solo 2 veces (número primo) terminan el año en  días miércoles y viernes asignados con los
-                       <br>número 3 y 5 (números primos).
-
+                       
                         <br>
                         
                         <br>
@@ -97,8 +94,8 @@
                     
                        
                     <div id="validationServer03Feedback" class="invalid-feedback">
-                        ¿Hasta que número quiere saber cuantos números primos hay?
-                        Ejemplo del 1 al 74 existen 21 números primos
+                        ¿Ingrese la datos a encriptar?
+                        
                     </div>
                 </div>
     
@@ -123,25 +120,45 @@
 
     <script>
 
-        var stopNumber = prompt("¿Hasta que número quiere saber cuantos números primso hay?");
-            var arrayOfPrimes = [];
-            var arePrime = 0;
-            var primeCounterArray = [];
-            var notPrime = 0;
-          for (actualNumber = 0; actualNumber <= stopNumber; actualNumber++ ) {
-              arrayOfPrimes.push(actualNumber);
-              for (indexPosition = 0; indexPosition <= arrayOfPrimes.length; indexPosition++) {
-                if (actualNumber % indexPosition === 0 && actualNumber !== 0) {
-                  primeCounterArray.push(1);
-                }
-              }
-              if (primeCounterArray.length > 2) {
-                notPrime++;
-                primeCounterArray = [];
-              }
+      <?php
+function encrypt($cadena){
+	$vocales 	= array("A", "E", "I", "O", "U", "Á", "É", "Í", "Ó", "Ú");
+	$resultado 	= str_replace($vocales, "3", strtoupper($cadena));
+	echo $resultado;
 }
-
-alert("Son primos: " + (stopNumber - notPrime));
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encriptar una frase PHP</title>
+	<link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<style>h3{font-family:'Russo One', sans-serif;}</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">			
+		    <div class="col-md-4 mx-auto">		    
+				<div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+				  	<div class="card-header text-center">ENCRIPTADOR</div>
+				  	<div class="card-body">			
+					    <?php if(isset($_REQUEST['btn_enviar'])): ?>
+						<h3 class="card-title text-center">
+					    <?php encrypt($_REQUEST['mensaje']) ?>
+					    </h3>
+					    <?php endif; ?>
+					    <hr>
+						<form>				
+							<textarea class="form-control" name="mensaje" placeholder="Ingrese un mensaje a encriptar" required></textarea>
+							<input type="submit" class="btn btn-success btn-block" value="ENCRIPTAR" name="btn_enviar">
+						</form>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
 
 
     </script>
